@@ -1,10 +1,12 @@
+import java.util;
+
 public class Game {
 
-	private int current_player;
+	private Player current_player;
 
-	private int gameIndex;
+	//private int gameIndex;
 
-	private Player[] plays;
+	private List<Player> playerList;
 
 	private Selection selection;
 
@@ -20,6 +22,18 @@ public class Game {
 
 	private PlayerHistory playerHistory;
 
+	public void add_player(Player player){
+	    if(!this.playerList.contains(player)){
+	        this.playerList.add(player);
+        }
+    }
+
+    public void Game(){
+	    this.current_player = NULL;
+	    //this.gameIndex = ;
+
+    }
+
 	public void start() {
 
 	}
@@ -34,6 +48,10 @@ public class Game {
 
 	public Player determine_winner() {
 		return null;
+	}
+
+	public static void main(String args[]){
+		return;
 	}
 
 }

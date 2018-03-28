@@ -1,7 +1,8 @@
 public class Graveyard extends Position {
 
-	private List[] deck;
+	private List<Card> deck;
 
-	private Sacrifice sacrifice;
-
+	public void Graveyard(List<Card> deck){
+	    this.deck = deck;
+    }
 }

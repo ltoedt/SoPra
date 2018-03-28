@@ -2,8 +2,8 @@ public class Stay {
 
 	private Card card;
 
-	private Selection selection;
+	private Position position_init;
 
-	private Selection move card;
+	private Position position_final;
 
 }

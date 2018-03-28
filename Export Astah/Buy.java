@@ -1,10 +1,8 @@
 public class Buy implements Move, MoveChildren{
 
-    private Player player;
-
 	private Card card;
 
-    private Position position_init;
+	private Position position_init;
 
     private Position position_final;
 

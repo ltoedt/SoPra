@@ -1,7 +1,5 @@
 public abstract class MoveCard implements Move {
 
-	private Player player;
-
 	private Card card;
 
 	private Position position_init;

@@ -1,19 +1,15 @@
 public class Hand extends Position {
 
-	private List[] deck;
+	private List<Card> deck;
 
-	private DrawPile draws cards;
+	public void Hand(List<Card> deck){
+		this.deck = deck;
+	}
 
-	private DiscardPile discardPile;
-
-	private DiscardPile discardPile;
-
-	private Player has;
-
-	private Selection[] selection;
-
-	public Select select(Card card) {
-		return null;
+	public Select select(Player player, Card card) {
+		Select sel = new Select(player, card);
+		sel.move();
+		return sel;
 	}
 
 }

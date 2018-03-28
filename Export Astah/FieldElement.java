@@ -1,16 +1,16 @@
-public class Field {
+public class FieldElement {
 
-	private List[] neighbors;
+	private List<FieldElement> neighbors;
 
-	private int is_occupied;
+	private boolean is_occupied;
 
-	private Tuple[] power;
+	private Tuple<int,int> power;
 
 	public boolean is_neighbor(Field field) {
 		return false;
 	}
 
-	public Tuple[] getpower() {
+	public Tuple<int,int> getpower() {
 		return null;
 	}
 
